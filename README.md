@@ -31,9 +31,8 @@ I have both Kali and Metasploitable3 virtual machines running on VirtualBox and 
 • Metasploitable3
 
 ## Scanning Methodology that I used
-• nmap -A -sV 10.x.x.x    # Aggressive + Service/Version detection
+• nmap -A -sV 10.x.x.x    # OS Detection + Service/Version detection + Default scripts + Traceroute
 • nmap -p- 10.x.x.x       # Full port scan
-• nmap -sC -sV -O -p- 10.x.x.x   # Default scripts + OS Detection + All ports scan
 
 ## The importance of knowing service versions
 • Knowing what version is running regarding a service can help direct you to an exploit, which can be used to gain access. For example:
