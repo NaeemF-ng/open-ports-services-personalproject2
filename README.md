@@ -16,7 +16,9 @@ This project aligns with MITRE ATT&CK Reconnaissance (TA0043) techniques. TA0043
 ## Architecture
 
 I have both Kali and Metasploitable3 virtual machines running on VirtualBox and a NAT Network called "Labnet". This setup ensures that both machines are away from the internet and can only communicate within my homelab, resulting in a safe pentesting environment. 
-![Metasploitable settings](/images/M3.png)
+![Metasploitable3 VM Settings](/images/M3.png)
+![Kali VM Settings ](/images/Kali.png)
+
 
 ## Objective 
 • Demonstrate foundational pentesting skills
@@ -34,20 +36,30 @@ I have both Kali and Metasploitable3 virtual machines running on VirtualBox and 
 ## Scanning Methodology that I used
 • nmap -A -sV 10.x.x.x    # OS Detection + Service/Version detection + Default scripts + Traceroute
 • nmap -p- 10.x.x.x       # Full port scan
+![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-1.png)
+![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-2.png)
+![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-3.png)
+![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-4.png)
+![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-5.png)
+![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-6.png)
+![nmap -p- (Metasploitable3 ip)](/images/full-port-scan)
+![nmap -p- (Metasploitable3 ip)](/images/full-port-scan2)
+
 
 ## The importance of knowing service versions
 • Knowing what version is running regarding a service can help direct you to an exploit, which can be used to gain access. For example:
 Looking at my port scan we see that the FTP port is open and the version that is being used is 2.3.4. If you search on Metasploit (which is a tool used for many things such as recon, exploitation, post exploitation, persistence, etc., but in this case for an exploit) for FTP version 2.3.4, there is a backdoor that allows command execution for that exact version.
+![FTP exploit in Metasploit](/images/ftp-exploit-screenshot.png)
 
-## Findings 
+
+## Findings
 Open Ports:
 • 21, 22, 23, 25, 53, 80, 111, 139, 445, 512, 513, 514, 1099, 1524, 2049, 2121, 3306, 5432, 5900, 6000, 6667, 8009, 8180
-
-
 • Operating system, version, and service info
 • Some MAC addresses, which I covered
 • Traceroute info which stated that 1 hop was needed
 • The high number of exposed services highlights the need for proper mitigation and hardening in real-world systems. I did not perform any exploitation or attacks in this project, as it focuses strictly on discovery and enumeration.
+
 
 ## Key Ports To Focus On:
 
