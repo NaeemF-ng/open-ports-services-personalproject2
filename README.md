@@ -42,8 +42,8 @@ I have both Kali and Metasploitable3 virtual machines running on VirtualBox and 
 ![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-4.png)
 ![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-5.png)
 ![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-6.png)
-![nmap -p- (Metasploitable3 ip)](/images/full-port-scan)
-![nmap -p- (Metasploitable3 ip)](/images/full-port-scan2)
+![nmap -p- (Metasploitable3 ip)](/images/full-port-scan.png)
+![nmap -p- (Metasploitable3 ip)](/images/full-port-scan2.png)
 
 
 ## The importance of knowing service versions
