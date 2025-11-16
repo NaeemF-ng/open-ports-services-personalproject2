@@ -16,6 +16,7 @@ This project aligns with MITRE ATT&CK Reconnaissance (TA0043) techniques. TA0043
 ## Architecture
 
 I have both Kali and Metasploitable3 virtual machines running on VirtualBox and a NAT Network called "Labnet". This setup ensures that both machines are away from the internet and can only communicate within my homelab, resulting in a safe pentesting environment. 
+![Metasploitable settings](/images/M3.png)
 
 ## Objective 
 • Demonstrate foundational pentesting skills
