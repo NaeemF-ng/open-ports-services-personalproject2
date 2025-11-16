@@ -116,3 +116,7 @@ Port 8080 - Apache Tomcat
 • Misconfigurations can expose manager panels or allow .WAR file uploads that lead to RCE (Remote Code Execution). I actually completed a challenge on TryHackMe regarding this — I’ll probably publish the writeup for it.  
 • It usually has weak/default credentials
 
+## Lessons Learned 
+• How service versions can directly map to vulnerabilities
+• The importance of different argument usage within nmap
+• Why enumeration and is the foundation of an attack
