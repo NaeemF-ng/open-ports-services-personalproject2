@@ -34,8 +34,8 @@ I have both Kali and Metasploitable3 virtual machines running on VirtualBox and 
 • Metasploitable3
 
 ## Scanning Methodology that I used
-• nmap -A -sV 10.x.x.x    # OS Detection + Service/Version detection + Default scripts + Traceroute
-• nmap -p- 10.x.x.x       # Full port scan
+• nmap -A -sV (Metasploitable3 ip)    # OS Detection + Service/Version detection + Default scripts + Traceroute
+• nmap -p- (Metasploitable3 ip)       # Full port scan
 ![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-1.png)
 ![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-2.png)
 ![nmap -A -sV (Metasploitable3 ip)](/images/Anmap-scan-3.png)
